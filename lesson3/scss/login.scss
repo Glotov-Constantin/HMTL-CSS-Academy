@@ -1,0 +1,64 @@
+.login-page{
+    display: flex;
+    max-width: 1440px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    h3{
+        font-family: 'League Spartan', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+        text-transform: uppercase;
+        padding: 52px 0 0 0;
+    }
+    &__logo{
+        padding: 97px 0 0 0;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        padding: 112px 0 27px 0;
+    }
+    &__img-block{
+        // background: url(img/login-page_bg.jpg) top left no-repeat;
+        width: 50%;
+        height: auto;
+        img{
+            max-width: 100%;
+        }
+    }
+    &__login-form{
+        width: 100%;
+        max-width: 433px;
+        padding: 0 0 0 150px;
+    }
+    &__button{
+        padding: 3px 0 17px 0;
+    }
+    &__change-form{
+        padding: 13px 0 100px 0;
+        span{
+            padding-left: 8px;
+            a{
+                color: #D4A373;
+            }
+        }
+    }
+    &__remember-block{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        a{
+            color: #D4A373;
+        }
+    }
+    &__remember-me{
+        label{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
