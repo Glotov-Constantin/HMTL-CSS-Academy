@@ -1,0 +1,100 @@
+.login-page{
+    display: flex;
+    max-width: 1440px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    h3{
+        font: 700 40px/44px 'League Spartan', sans-serif;
+        text-transform: uppercase;
+        padding: 52px 0 0;
+    }
+    &__logo{
+        padding: 97px 0 0;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        padding: 112px 0 27px;
+    }
+    &__img-block{
+        // background: url(img/login-page_bg.jpg) top left no-repeat;
+        width: 50%;
+        height: auto;
+        img{
+            max-width: 100%;
+        }
+    }
+    &__login-form{
+        width: 100%;
+        max-width: 433px;
+        padding: 0 0 0 150px;
+    }
+    &__button{
+        padding: 3px 0 17px;
+    }
+    &__change-form{
+        padding: 13px 0 100px;
+        span{
+            padding-left: 8px;
+            a{
+                color: #D4A373;
+            }
+        }
+    }
+    &__remember-block{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        a{
+            color: #D4A373;
+        }
+    }
+    &__remember-me{
+        label{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    @media (max-width:1300px) {
+        &__logo{
+            padding: 60px 0 0;
+        }
+        &__title{
+            padding: 60px 0 27px;
+        }
+        &__login-form{
+            max-width: 400px;
+            padding: 0 0 0 50px; 
+        }
+    }
+
+    @media (max-width:991px) {
+        &__img-block{
+            display: none;
+        }
+        &__login-form{
+            padding: 0 0 0 90px; 
+        }
+    }
+
+    @media (max-width:767px) {
+        margin-top: 20px;
+        &__login-form{
+            padding: 0 20px;
+            margin: 0 auto; 
+        }
+    }
+
+    @media (max-width:575px) {
+        margin-top: 0;
+        &__title{
+            font-size: 30px;
+            line-height: 34px;
+            padding: 40px 0 27px;
+        }
+    }
+
+}

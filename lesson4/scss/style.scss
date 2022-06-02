@@ -1,0 +1,55 @@
+@import "../../node_modules/normalize.css/normalize";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700&family=Lora:wght@400;700&family=Roboto:wght@300;700&display=swap');
+body{
+    font: 400 16px/24px 'Lora', serif;
+    color: #212529;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+input{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 9px 0 20px;
+}
+input.checkbox{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+button{
+    background: #D4A373;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    width: 100%;
+    height: 48px;
+    &:hover{
+        background: #b98f64;
+        transition-duration: 0.5s;
+    }
+}
+.button-black{
+    background: #343A40;
+    &:hover{
+        background: #212529;
+        transition-duration: 0.5s;
+    }
+}
+label{
+    font-size: 14px;
+    line-height: 20px;
+}
+.flex{
+    display: flex;
+}

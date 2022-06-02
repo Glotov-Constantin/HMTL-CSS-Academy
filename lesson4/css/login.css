@@ -1,0 +1,96 @@
+.login-page {
+  display: flex;
+  max-width: 1440px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-page h3 {
+  font: 700 40px/44px "League Spartan", sans-serif;
+  text-transform: uppercase;
+  padding: 52px 0 0;
+}
+.login-page__logo {
+  padding: 97px 0 0;
+}
+.login-page__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  padding: 112px 0 27px;
+}
+.login-page__img-block {
+  width: 50%;
+  height: auto;
+}
+.login-page__img-block img {
+  max-width: 100%;
+}
+.login-page__login-form {
+  width: 100%;
+  max-width: 433px;
+  padding: 0 0 0 150px;
+}
+.login-page__button {
+  padding: 3px 0 17px;
+}
+.login-page__change-form {
+  padding: 13px 0 100px;
+}
+.login-page__change-form span {
+  padding-left: 8px;
+}
+.login-page__change-form span a {
+  color: #D4A373;
+}
+.login-page__remember-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+.login-page__remember-block a {
+  color: #D4A373;
+}
+.login-page__remember-me label {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1300px) {
+  .login-page__logo {
+    padding: 60px 0 0;
+  }
+  .login-page__title {
+    padding: 60px 0 27px;
+  }
+  .login-page__login-form {
+    max-width: 400px;
+    padding: 0 0 0 50px;
+  }
+}
+@media (max-width: 991px) {
+  .login-page__img-block {
+    display: none;
+  }
+  .login-page__login-form {
+    padding: 0 0 0 90px;
+  }
+}
+@media (max-width: 767px) {
+  .login-page {
+    margin-top: 20px;
+  }
+  .login-page__login-form {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 575px) {
+  .login-page {
+    margin-top: 0;
+  }
+  .login-page__title {
+    font-size: 30px;
+    line-height: 34px;
+    padding: 40px 0 27px;
+  }
+}

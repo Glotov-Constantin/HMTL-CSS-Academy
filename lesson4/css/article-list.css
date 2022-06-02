@@ -1,0 +1,62 @@
+.article-table {
+  padding-top: 25px;
+}
+.article-table table {
+  width: 100%;
+}
+.article-table table tr td:first-child {
+  width: 39px;
+  padding-left: 17px;
+}
+.article-table table tr td:nth-child(2) {
+  width: 67px;
+}
+.article-table table tr td:nth-child(2) img {
+  max-width: 48px;
+}
+.article-table table tr td:nth-child(3) {
+  max-width: 170px;
+  padding-right: 20px;
+}
+.article-table table tr td:last-child {
+  width: 88px;
+}
+.article-table table td {
+  padding: 16px 0 15px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.article-table thead {
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #6C757D;
+}
+.article-table thead td {
+  white-space: nowrap;
+  padding-top: 0 !important;
+  padding-bottom: 9px !important;
+}
+.article-table__actions {
+  display: flex;
+  justify-content: space-between;
+}
+.article-table__actions a {
+  background: url(../img/admin-panel/edit.svg) top left no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.article-table__actions a:last-child {
+  background: url(../img/admin-panel/trash.svg) top left no-repeat;
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  .article-table table tr td:last-child {
+    width: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .article-table table {
+    width: 767px;
+    overflow-x: scroll;
+  }
+}
