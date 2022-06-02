@@ -7,10 +7,10 @@
     h3{
         font: 700 40px/44px 'League Spartan', sans-serif;
         text-transform: uppercase;
-        padding: 52px 0 0;
+        padding-top: 52px;
     }
     &__logo{
-        padding: 97px 0 0;
+        padding-top: 97px;
     }
     &__title{
         font-weight: 700;
@@ -29,7 +29,7 @@
     &__login-form{
         width: 100%;
         max-width: 433px;
-        padding: 0 0 0 150px;
+        padding-left: 150px;
     }
     &__button{
         padding: 3px 0 17px;
@@ -60,14 +60,14 @@
 
     @media (max-width:1300px) {
         &__logo{
-            padding: 60px 0 0;
+            padding-top: 60px;
         }
         &__title{
             padding: 60px 0 27px;
         }
         &__login-form{
             max-width: 400px;
-            padding: 0 0 0 50px; 
+            padding-left: 50px;
         }
     }
 
@@ -76,7 +76,7 @@
             display: none;
         }
         &__login-form{
-            padding: 0 0 0 90px; 
+            padding-left: 90px;
         }
     }
 

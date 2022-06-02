@@ -22,8 +22,9 @@
   width: 88px;
 }
 .article-table table td {
-  padding: 16px 0 15px;
   border-bottom: 1px solid #E5E5E5;
+  padding-top: 16px;
+  padding-bottom: 15px;
 }
 .article-table thead {
   font-size: 12px;

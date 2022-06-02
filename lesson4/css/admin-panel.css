@@ -57,8 +57,7 @@
   line-height: 16px;
   color: #D4A373;
   list-style-type: none;
-  padding: 0 20px 0 0;
-  margin: 0;
+  padding-right: 20px;
 }
 .admin-panel__breadcrumb ul li a {
   font-size: 14px;
@@ -86,7 +85,7 @@
   padding-top: 22px;
 }
 .admin-panel__search {
-  padding: 23px 0 0;
+  padding-top: 23px;
 }
 .admin-panel__search form {
   position: relative;
@@ -96,7 +95,7 @@
   height: 40px;
   line-height: 20px;
   width: 307px;
-  padding: 0 0 0 45px;
+  padding-left: 45px;
   margin: 0;
 }
 .admin-panel__search form button {
@@ -121,7 +120,8 @@
 @media (max-width: 500px) {
   .admin-panel__search {
     width: 100%;
-    padding: 23px 10px 0 0;
+    padding-top: 23px;
+    padding-right: 10px;
   }
   .admin-panel__search form input {
     width: 100%;

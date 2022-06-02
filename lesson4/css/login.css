@@ -8,10 +8,10 @@
 .login-page h3 {
   font: 700 40px/44px "League Spartan", sans-serif;
   text-transform: uppercase;
-  padding: 52px 0 0;
+  padding-top: 52px;
 }
 .login-page__logo {
-  padding: 97px 0 0;
+  padding-top: 97px;
 }
 .login-page__title {
   font-weight: 700;
@@ -29,7 +29,7 @@
 .login-page__login-form {
   width: 100%;
   max-width: 433px;
-  padding: 0 0 0 150px;
+  padding-left: 150px;
 }
 .login-page__button {
   padding: 3px 0 17px;
@@ -57,14 +57,14 @@
 }
 @media (max-width: 1300px) {
   .login-page__logo {
-    padding: 60px 0 0;
+    padding-top: 60px;
   }
   .login-page__title {
     padding: 60px 0 27px;
   }
   .login-page__login-form {
     max-width: 400px;
-    padding: 0 0 0 50px;
+    padding-left: 50px;
   }
 }
 @media (max-width: 991px) {
@@ -72,7 +72,7 @@
     display: none;
   }
   .login-page__login-form {
-    padding: 0 0 0 90px;
+    padding-left: 90px;
   }
 }
 @media (max-width: 767px) {

@@ -57,8 +57,7 @@
                 line-height: 16px;
                 color: #D4A373;
                 list-style-type: none;
-                padding: 0 20px 0 0;
-                margin: 0;
+                padding-right: 20px;
                 a{
                     font-size: 14px;
                     line-height: 16px;
@@ -90,7 +89,7 @@
         padding-top: 22px;
     }
     &__search{
-        padding: 23px 0 0;
+        padding-top: 23px;
         form{
             position: relative;
             input{
@@ -98,7 +97,7 @@
                 height: 40px;
                 line-height: 20px;
                 width: 307px;
-                padding: 0 0 0 45px;
+                padding-left: 45px;
                 margin: 0;
             }
             button{
@@ -124,7 +123,8 @@
     @media (max-width:500px) {
         &__search{
             width: 100%;
-            padding: 23px 10px 0 0;
+            padding-top: 23px;
+            padding-right: 10px;
             form{
                 input{
                     width: 100%;
