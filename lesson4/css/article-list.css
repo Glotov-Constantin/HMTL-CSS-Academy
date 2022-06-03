@@ -56,8 +56,10 @@
   }
 }
 @media (max-width: 767px) {
+  .article-table {
+    overflow-x: scroll;
+  }
   .article-table table {
     width: 767px;
-    overflow-x: scroll;
   }
 }
