@@ -66,9 +66,9 @@
     }
 
     @media (max-width:767px) {
+        overflow-x: scroll;
         table{
             width: 767px;
-            overflow-x: scroll;
         }
     }
 
