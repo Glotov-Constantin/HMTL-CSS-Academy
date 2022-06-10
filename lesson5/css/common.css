@@ -58,6 +58,58 @@ label {
   line-height: 20px;
 }
 
+address {
+  font-style: normal;
+}
+
 .flex {
   display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #495057;
+}
+@media (1320px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}
+@media (767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+}
+.container a {
+  font-weight: 700;
+  color: #495057;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.container a:hover {
+  border-bottom: 2px solid #D4A373;
+}
+
+.container-title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.container-title .title {
+  font: 700 36px/46px "Lora";
+}
+.container-title .title-link {
+  padding-top: 28px;
+}
+.container-title a {
+  font-size: 12px;
+  line-height: 25px;
 }

@@ -1,0 +1,61 @@
+@import "variables.scss";
+.blog-mini{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 5px;
+    a{
+        padding-bottom: 0;
+    }
+    &__img{
+        a{
+            padding-bottom: 0;
+            transition: transform 2s, filter 1.5s ease-in-out;
+            transform-origin: center center;
+            filter: brightness(100%);
+            &:hover{
+                border-bottom: none;
+                filter: brightness(70%);
+                transform: scale(1);
+            }
+        }
+        img{
+            border-radius: 5px;
+            max-width: 310px;
+        }
+    }
+    &__date{
+        font-size: 12px;
+        line-height: 15px;
+        color: $content-light;
+        padding-top: 10px;
+    }
+    h4{
+        font: 700 18px/25px 'Lora';
+        margin: 15px 0 0;
+    }
+    h5{
+        font: 400 12px/20px 'Lora';
+        color: $content-light;
+        margin: 14px 0 51px;
+    }
+
+    @media (max-width:$breakpoint1320) {
+        grid-template-columns: 32% 32% 32%;
+        grid-column-gap: 2%;
+        &__img{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media (max-width:$breakpoint767) {
+        grid-template-columns: 49% 49%;
+        grid-column-gap: 2%;
+    }
+
+    @media (max-width:$breakpoint575) {
+        grid-template-columns: 100%;
+    }
+
+}

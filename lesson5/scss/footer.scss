@@ -1,0 +1,84 @@
+@import "variables.scss";
+.footer{
+    background: $black;
+    .container{
+        font-size: 12px;
+        line-height: 20px;
+        color: $footer-color;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: $footer-color;
+            font-weight: 400;
+        }
+    }
+    &__block{
+        width: 24%;
+        ul{
+            padding-bottom: 80px;
+            li{
+                padding-bottom: 13px;
+            }
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 104px 0 1px;
+    }
+    &__text{
+        padding-top: 13px;
+    }
+    &__social{
+        ul{
+            display: flex;
+            li{
+                padding-right: 18px;
+            }
+        }
+    }
+
+    @media ($breakpoint767) {
+        .container{
+            display: grid;
+            grid-template-columns: 49% 49%;
+            grid-column-gap: 2%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &__title{
+            padding-top: 0;
+        }
+        &__block{
+            width: 100%;
+            ul{
+                padding-bottom: 0px;
+                li{
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        &__social{
+            ul{
+                li{
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+
+}
+
+.footer-after{
+    padding-top: 31px;
+    padding-bottom: 31px;
+    .container{
+        max-width: 1324px;
+    }
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    background: $footer-after;
+    
+}

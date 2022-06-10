@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize";
+@import "../css/normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700&family=Lora:wght@400;700&family=Roboto:wght@300;700&display=swap');
 @import "variables.scss";
 .admin-panel{
@@ -114,12 +114,12 @@
         }
     }
 
-    @media (max-width:1400px) {
+    @media (max-width:$breakpoint1400) {
         &__container{
             width: 95%;
         }
     }
-    @media (max-width:991px) {
+    @media (max-width:$breakpoint991) {
         font-size: 14px;
         line-height: 20px;
     }

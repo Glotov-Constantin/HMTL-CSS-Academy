@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize";
+@import "../css/normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700&family=Lora:wght@400;700&family=Roboto:wght@300;700&display=swap');
 @import "variables.scss";
 @import "common.scss";
@@ -62,7 +62,7 @@
         }
     }
 
-    @media (max-width:1300px) {
+    @media (max-width:$breakpoint1300) {
         &__logo{
             padding-top: 60px;
         }
@@ -75,7 +75,7 @@
         }
     }
 
-    @media (max-width:991px) {
+    @media (max-width:$breakpoint991) {
         &__img-block{
             display: none;
         }
@@ -84,7 +84,7 @@
         }
     }
 
-    @media (max-width:767px) {
+    @media (max-width:$breakpoint767) {
         margin-top: 20px;
         &__login-form{
             padding: 0 20px;
@@ -92,7 +92,7 @@
         }
     }
 
-    @media (max-width:575px) {
+    @media (max-width:$breakpoint575) {
         margin-top: 0;
         &__title{
             font-size: 30px;
