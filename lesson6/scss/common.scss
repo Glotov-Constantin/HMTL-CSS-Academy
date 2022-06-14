@@ -1,0 +1,134 @@
+@import "variables.scss";
+@import "mixins.scss";
+body{
+    font: 400 16px/24px 'Lora', serif;
+    color: $black;
+    background-color: $content-bg;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+ul{
+    @include reset-list;
+}
+input{
+    box-sizing: border-box;
+    background: $white;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 9px 0 20px;
+}
+input.checkbox{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+button{
+    background: $brown;
+    color: $white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    width: 100%;
+    height: 48px;
+    &:hover{
+        background: #b98f64;
+        transition-duration: 0.5s;
+    }
+}
+.button-black{
+    background: #343A40;
+    &:hover{
+        background: $black;
+        transition-duration: 0.5s;
+    }
+}
+label{
+    font-size: 14px;
+    line-height: 20px;
+}
+address{
+    font-style: normal;
+}
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $content-color;
+    @media (max-width: $breakpoint1320) {
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+    @media (max-width: $breakpoint767) {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    a{
+        font-weight: 700;
+        color: $content-color;
+        text-decoration: none;
+        padding-bottom: 5px;
+        &:hover{
+            border-bottom: 2px solid $brown;
+        }
+    }
+}
+.container-title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    .title{
+        font: 700 36px/46px 'Lora';
+        padding: 0;
+    }
+    .title-link{
+        padding-top: 28px;
+        @media (max-width: $breakpoint991) {
+            padding-top: 12px;
+        }
+    }
+    a{
+        font-size: 12px;
+        line-height: 25px;
+    }
+}
+.section-txt{
+    .container{
+        max-width: 860px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+.section-gray{
+    background: $gray-bg;
+}
+h1{
+    font-size: 36px;
+    line-height: 46px;
+    color: $brown;
+    @media (max-width: $breakpoint767) {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+p{
+    margin-bottom: 26px;
+}
+.title{
+    font: 700 18px/25px 'Lora';
+    padding: 100px 0 50px;
+}

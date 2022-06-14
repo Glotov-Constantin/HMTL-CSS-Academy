@@ -1,0 +1,46 @@
+@import "variables.scss";
+@import "mixins.scss";
+.section-txt{
+    padding-bottom: 94px;
+    &__date-created{
+        font-size: 12px;
+        font-weight: 700;
+        border-bottom: 1px solid $border-txt;
+        padding: 28px 0 41px;
+    }
+    &__about{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        &-author{
+            display: flex;
+            div{
+                padding-top: 4px;
+                padding-left: 16px;
+            }
+            img{
+                max-width: 50px;
+                max-height: 50px;
+                border-radius: 50%;
+            }
+            p{
+                font-size: 12px;
+                line-height: 20px;
+                color: $content-light;
+                margin: 0;
+                &:first-child{
+                    font-weight: 700;
+                    color: $content-color;
+                }
+            }
+        }
+        &-social{
+            ul{
+                display: flex;
+                li{
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}

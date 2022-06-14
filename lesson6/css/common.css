@@ -1,0 +1,152 @@
+body {
+  font: 400 16px/24px "Lora", serif;
+  color: #212529;
+  background-color: #F8F9FA;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+input {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  padding-left: 10px;
+  margin: 9px 0 20px;
+}
+
+input.checkbox {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: #D4A373;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  width: 100%;
+  height: 48px;
+}
+button:hover {
+  background: #b98f64;
+  transition-duration: 0.5s;
+}
+
+.button-black {
+  background: #343A40;
+}
+.button-black:hover {
+  background: #212529;
+  transition-duration: 0.5s;
+}
+
+label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+address {
+  font-style: normal;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #495057;
+}
+@media (max-width: 1320px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+}
+.container a {
+  font-weight: 700;
+  color: #495057;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.container a:hover {
+  border-bottom: 2px solid #D4A373;
+}
+
+.container-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.container-title .title {
+  font: 700 36px/46px "Lora";
+  padding: 0;
+}
+.container-title .title-link {
+  padding-top: 28px;
+}
+@media (max-width: 991px) {
+  .container-title .title-link {
+    padding-top: 12px;
+  }
+}
+.container-title a {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.section-txt .container {
+  max-width: 860px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.section-gray {
+  background: rgba(229, 229, 229, 0.3);
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #D4A373;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+p {
+  margin-bottom: 26px;
+}
+
+.title {
+  font: 700 18px/25px "Lora";
+  padding: 100px 0 50px;
+}

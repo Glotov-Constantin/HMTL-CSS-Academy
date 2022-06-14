@@ -1,0 +1,147 @@
+@import "../css/normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700&family=Lora:wght@400;700&family=Roboto:wght@300;700&display=swap');
+@import "variables.scss";
+.admin-panel{
+    font:400 16px/24px 'Roboto';
+    color: #495057;
+    &__header{
+        background: $white;
+        border-bottom: 1px solid $border-color;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        .admin-panel__container{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__container{
+        width: 100%;
+        max-width: 1360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__logo{
+        padding: 28px 40px 26px 0;
+    }
+    &__top-menu{
+        ul{
+            display: flex;
+            li{
+                list-style-type: none;
+                padding: 6px 13px 0 18px;
+                a{
+                    font:700 14px/20px 'Lora';
+                    color: $black;
+                    text-decoration: none;
+                    padding-bottom: 5px;
+                    &:hover{
+                        border-bottom: 2px solid $brown;
+                    }
+                }
+                a.active{
+                    border-bottom: 2px solid $brown;
+                    &:hover{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    &__breadcrumb{
+        padding-top: 103px;
+        ul{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            li{
+                font-size: 14px;
+                line-height: 16px;
+                color: $brown;
+                list-style-type: none;
+                padding-right: 20px;
+                a{
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $brown;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    &__title{
+        font: 700 24px/28px 'Roboto';
+        color: $black;
+        padding-top: 8px;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    button{
+        width: 158px;
+        height: 40px;
+    }
+    &__button{
+        padding-top: 22px;
+    }
+    &__search{
+        padding-top: 23px;
+        form{
+            position: relative;
+            input{
+                font-size: 14px;
+                height: 40px;
+                line-height: 20px;
+                width: 307px;
+                padding-left: 45px;
+                margin: 0;
+            }
+            button{
+                background: url(../img/admin-panel/search.svg) top left no-repeat;
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    @media (max-width:$breakpoint1400) {
+        &__container{
+            width: 95%;
+        }
+    }
+    @media (max-width:$breakpoint991) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @media (max-width:500px) {
+        &__search{
+            width: 100%;
+            padding-top: 23px;
+            padding-right: 10px;
+            form{
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        &__button{
+            button{
+                width: 100px;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

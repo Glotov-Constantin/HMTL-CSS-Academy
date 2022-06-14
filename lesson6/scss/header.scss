@@ -1,0 +1,66 @@
+@import "variables.scss";
+.header{
+    font:400 16px/24px 'Roboto';
+    color: #495057;
+    &__header{
+        background: $header-bg;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        .header__container{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__container{
+        width: 100%;
+        max-width: 1324px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__logo{
+        padding: 28px 40px 26px 0;
+    }
+    &__top-menu{
+        ul{
+            display: flex;
+            li{
+                list-style-type: none;
+                padding: 6px 13px 0 18px;
+                a{
+                    font:700 12px/14px 'Roboto';
+                    color: $white;
+                    text-decoration: none;
+                    padding-bottom: 5px;
+                    &:hover{
+                        border-bottom: 2px solid $brown;
+                    }
+                    &:active{
+                        border-bottom: 2px solid $brown;
+                        &:hover{
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width:$breakpoint1400) {
+        &__container{
+            width: 95%;
+        }
+        &__top-menu{
+            ul{
+                li{
+                    padding-top: 14px;
+                }
+            }
+        }
+    }
+    @media (max-width:$breakpoint991) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}

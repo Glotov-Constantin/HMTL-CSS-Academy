@@ -1,0 +1,59 @@
+.header {
+  font: 400 16px/24px "Roboto";
+  color: #495057;
+}
+.header__header {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.header__header .header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__container {
+  width: 100%;
+  max-width: 1324px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__logo {
+  padding: 28px 40px 26px 0;
+}
+.header__top-menu ul {
+  display: flex;
+}
+.header__top-menu ul li {
+  list-style-type: none;
+  padding: 6px 13px 0 18px;
+}
+.header__top-menu ul li a {
+  font: 700 12px/14px "Roboto";
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.header__top-menu ul li a:hover {
+  border-bottom: 2px solid #D4A373;
+}
+.header__top-menu ul li a:active {
+  border-bottom: 2px solid #D4A373;
+}
+.header__top-menu ul li a:active:hover {
+  border-bottom: none;
+}
+@media (max-width: 1400px) {
+  .header__container {
+    width: 95%;
+  }
+  .header__top-menu ul li {
+    padding-top: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

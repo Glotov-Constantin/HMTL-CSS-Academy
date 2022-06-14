@@ -1,0 +1,80 @@
+@import "variables.scss";
+@import "mixins.scss";
+.section-banner{
+    background: url(../img/content/banner-top.jpg) top center/cover no-repeat;
+    @include image-2x("../img/content/banner-top@2x.jpg");
+    margin-bottom: 100px;
+    &.banner-footer{
+        background: url(../img/content/banner-footer.jpg) top center/cover no-repeat;
+        @include image-2x("../img/content/banner-footer@2x.jpg");
+        margin-bottom: 0;
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+    &.banner-top_2{
+        background: url(../img/content/banner-top_2.jpg) top center/cover no-repeat;
+        @include image-2x("../img/content/banner-top_2@2x.jpg");      
+    }
+    &.banner-top_3{
+        background: url(../img/content/banner-top_3.jpg) top center/cover no-repeat;
+        @include image-2x("../img/content/banner-top_3@2x.jpg");      
+    }
+    &.banner-top_4{
+        background: url(../img/content/banner-top_4.jpg) top center/cover no-repeat;
+        @include image-2x("../img/content/banner-top_4@2x.jpg");  
+    }
+    &.banner-news{
+        background: url(../img/content/banner-footer.jpg) top center/cover no-repeat;
+        @include image-2x("../img/content/banner-footer@2x.jpg");
+        margin-bottom: 100px;
+        h1{
+            text-align: center;
+        }
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+    &.banner-article{
+        background: url(../img/content/banner-article.jpg) top center/cover no-repeat;
+        @include image-2x("../img/content/banner-article@2x.jpg");
+    }
+    .container{
+        max-width: 1280px;
+        height: 600px;
+        display: flex;
+        align-items: center;
+    }
+    h1, h2{
+        font: 700 36px/46px 'Lora';
+        color: $white;
+        max-width: 530px;
+        margin: 0;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+        font: 400 12px/20px 'Lora';
+        color: $white;
+        max-width: 420px;
+        text-align: center;
+    }
+
+    @media (max-width:$breakpoint575) {
+        .container{
+            height: 100vh;
+        }
+        h1, h2{
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+
+}
