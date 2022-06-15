@@ -50,17 +50,18 @@
         &__container{
             width: 95%;
         }
-        &__top-menu{
-            ul{
-                li{
-                    padding-top: 14px;
-                }
-            }
-        }
     }
     @media (max-width:$breakpoint991) {
         font-size: 14px;
         line-height: 20px;
+        &__top-menu{
+            ul{
+                li{
+                    padding-top: 14px;
+                    padding-right: 0;
+                }
+            }
+        }
     }
 
 }
