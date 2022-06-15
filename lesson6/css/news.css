@@ -1,6 +1,6 @@
 .news-mini {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 25%);
   grid-column-gap: 5px;
   padding-bottom: 50px;
 }
@@ -39,7 +39,7 @@
 }
 @media (max-width: 1320px) {
   .news-mini {
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: repeat(3, 32%);
     grid-column-gap: 2%;
   }
   .news-mini__img img {
@@ -48,7 +48,7 @@
 }
 @media (max-width: 767px) {
   .news-mini {
-    grid-template-columns: 49% 49%;
+    grid-template-columns: repeat(2, 49%);
     grid-column-gap: 2%;
   }
 }

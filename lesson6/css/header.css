@@ -47,13 +47,14 @@
   .header__container {
     width: 95%;
   }
-  .header__top-menu ul li {
-    padding-top: 14px;
-  }
 }
 @media (max-width: 991px) {
   .header {
     font-size: 14px;
     line-height: 20px;
+  }
+  .header__top-menu ul li {
+    padding-top: 14px;
+    padding-right: 0;
   }
 }
