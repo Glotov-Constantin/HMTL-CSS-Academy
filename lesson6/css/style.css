@@ -4,7 +4,6 @@
 body {
   font: 400 16px/24px "Lora", serif;
   color: #212529;
-  background-color: #F8F9FA;
 }
 
 a:hover {
@@ -158,6 +157,10 @@ p {
 .title {
   font: 700 18px/25px "Lora";
   padding: 100px 0 50px;
+}
+
+body {
+  background-color: #F8F9FA;
 }
 
 .header {
