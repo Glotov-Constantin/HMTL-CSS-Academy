@@ -1,0 +1,63 @@
+@import "../base/variables.scss";
+@import "../base/mixins.scss";
+
+/* START Set for slick slider */
+.related-posts{
+    .news-mini{
+        display: block;
+        @media (min-width: $breakpoint575) {
+            margin-right: -20px;
+            &__box{
+                @media (min-width: $breakpoint575) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+/* END Set for slick slider */
+
+@media (min-width: $breakpoint992) {
+.related-posts{
+    .news-mini{
+        // grid-template-columns: 32% 32% 32%; /* Unset for slick slider */
+        // grid-column-gap: 2%; /* Unset for slick slider */
+        padding-bottom: 100px;
+        &__box{
+            position: relative;
+        }
+        &__img{
+            img{
+                max-width: inherit;
+                width: 100%;
+            }
+        }
+        &__txt{
+            position: absolute;
+            bottom:0;
+            left: 40px;
+            padding-right: 10px;
+        }
+        &__date, h5{
+            color: $post-white;
+        }
+        h4{
+            max-width: 270px;
+            a{
+                color: $white;
+            }
+        }
+        h5{
+            max-width: 340px;
+        }
+        @media (max-width: $breakpoint1300) {
+            &__txt{
+                left:20px;
+            }
+            h5{
+                margin: 0 0 20px;
+            }
+        }
+    }
+}
+}

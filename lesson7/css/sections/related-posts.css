@@ -1,0 +1,55 @@
+/* Mixin for transition css */
+/* START Set for slick slider */
+.related-posts .news-mini {
+  display: block;
+}
+@media (min-width: 575px) {
+  .related-posts .news-mini {
+    margin-right: -20px;
+  }
+}
+@media (min-width: 575px) and (min-width: 575px) {
+  .related-posts .news-mini__box {
+    margin-right: 20px;
+  }
+}
+
+/* END Set for slick slider */
+@media (min-width: 992px) {
+  .related-posts .news-mini {
+    padding-bottom: 100px;
+  }
+  .related-posts .news-mini__box {
+    position: relative;
+  }
+  .related-posts .news-mini__img img {
+    max-width: inherit;
+    width: 100%;
+  }
+  .related-posts .news-mini__txt {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    padding-right: 10px;
+  }
+  .related-posts .news-mini__date, .related-posts .news-mini h5 {
+    color: #E5E5E5;
+  }
+  .related-posts .news-mini h4 {
+    max-width: 270px;
+  }
+  .related-posts .news-mini h4 a {
+    color: #ffffff;
+  }
+  .related-posts .news-mini h5 {
+    max-width: 340px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  .related-posts .news-mini__txt {
+    left: 20px;
+  }
+  .related-posts .news-mini h5 {
+    margin: 0 0 20px;
+  }
+}
